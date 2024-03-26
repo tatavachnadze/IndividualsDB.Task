@@ -14,8 +14,8 @@
         public string? OfficeNumber { get; set; }
         public DateTime CreateDate { get; set; }
         public bool IsDeleted { get; set; }
-        public ICollection<IndividualRelations> FromRelations { get; set; }
-        public ICollection<IndividualRelations> ToRelations { get; set; }
+        public ICollection<IndividualRelations>? FromRelations { get; set; }
+        public ICollection<IndividualRelations>? ToRelations { get; set; }
     }
     public enum Gender : byte
     {

@@ -14,8 +14,8 @@ namespace TBC.DTO
         public Type RelationType { get; set; }
         public DateTime CreateDate { get; set; }
         public bool IsDeleted { get; set; }
-        public Individual FromIndividual { get; set; }
-        public Individual ToIndividual { get; set; }      
+        public Individual FromIndividual { get; set; } = null!;
+        public Individual ToIndividual { get; set; } = null!;
     }
     public enum Type : byte
     {
