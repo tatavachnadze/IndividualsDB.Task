@@ -13,6 +13,7 @@ namespace TBC.Repository
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
             _cityRepository = new Lazy<ICityRepository>(() => new CityRepository(context));
+            _individualsRepository = new Lazy<IIndividualRepository>(() => new IndividualsRepository(context));
         }
 
         public IIndividualRepository IndividualsRepository => _individualsRepository.Value;
